@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Activate your Australian Stan account here to start watching your favorite shows and movies. Dive into great entertainment easily and enjoy streaming whenever you want">
+    <meta name="keywords" content="stan.com.au/activate">
+   
+<title>stan.com.au/activate</title>
+<style>
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ 
+ body{
+     overflow-x: hidden; 
+     
+ }
+  .navbar {
+    background-color: transparent;
+    color: #008000;
+    padding: 10px;
+     left:10;
+    top: 0;
+    right: 0;
+
+    
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    margin-left:65%;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #008000;
+    display: flex;
+    align-items: center;
+    position: relative; /* Added relative positioning */
+  }
+  .navbar a i {
+    margin-right: 8px;
+    color: #008000;
+  }
+  .navbar a span {
+    margin-right: 8px;
+    position: relative; /* Added relative positioning */
+  }
+  .navbar a span::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Adjust the distance of the line from the text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #008000; /* Set the color of the line */
+    transition: width 0.3s ease; /* Smooth transition for line expansion */
+  }
+  .navbar a:hover span::after {
+    width: 100%; /* Expand the line on hover */
+  }
+
+  /* Additional Navbar */
+  .navbar-secondary {
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white */
+    padding: 10px;
+    
+    top: 50px; /* Adjust top position to avoid overlap */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999; /* Ensure it's above the primary navbar */
+    height:40px;
+  }
+  .navbar-secondary .logo {
+    margin-left: 10px;
+    color: #ffffff; /* Set logo color to white */
+    font-weight: bold;
+  }
+  .navbar-secondary .logo img {
+    height: 50px; /* Adjust height of the logo image */
+  }
+  .navbar-secondary a {
+    text-decoration: none;
+    color: #ffffff; /* Set text color to white */
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for text movement */
+  }
+  .navbar-secondary a:hover {
+    transform: translateY(-5px); /* Move text up on hover */
+  }
+
+  /* Content Section */
+  .content {
+    margin-top: 150px; /* Adjust margin to avoid overlap with navbars */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content img {
+    max-width: 40%; /* Adjust image width */
+  }
+  .content-text {
+    max-width: 55%; /* Adjust text width */
+  }
+  .content h1 {
+    margin-top: 0;
+  }
+  .content p {
+    margin-bottom: 20px;
+  }
+  .content button {
+    background-color: #008000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  .content button:hover {
+    background-color: #006400; /* Darken the background color on hover */
+  }
+
+
+.about-us2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .left {
+    flex: 1;
+    font-size:20px;
+    margin-left:10%;
+  }
+
+  .vertical-line {
+    border-left: 1px solid black;
+    height: 250px; /* Adjust height as needed */
+    margin-left:2%;
+  }
+
+  .right {
+    flex: 1;
+    padding-left: 20px; /* Adjust padding as needed */
+    
+  }
+
+  .right h2 {
+    margin-top: 10;
+  }
+
+  img {
+    width: 650px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+  }
+
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: -5%;
+   
+ margin-left:1%;
+    
+    
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+ 
+}
+
+  humpty {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  humpty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    user-select: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* gap between cards */
+  }
+
+  .card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #7952b3;
+    height: 220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  .card:hover::before {
+    transition-delay: 0.2s;
+    transform: scale(40);
+  }
+
+  .card:hover {
+    color: #ffffff;
+  }
+
+  .card p {
+    padding: 10px 0;
+  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .additional-content h2{
+    
+                    
+                     text-align: center;
+                     font-size:40px;
+    
+}
+
+.additional-content p{
+    
+                    
+                     text-align: center;
+                     font-size:18px;
+    
+}
+.additional-contents ul li{
+     
+                  padding:10px;
+                   margin-left:2%;
+                     font-size:18px;
+                     line-height:30px;
+
+
+    
+}
+
+.second-additional-content h2{
+    
+                     padding:40px;
+                     text-align: center;
+                     font-size:40px;
+                     background-color:#1e81b0;
+                     color:white;
+}
+                  
+.second-additional-content p{
+    
+    padding:15px;
+                     text-align: center;
+                     font-size:18px;
+}                     
+    
+
+     .sholey-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-left:5%;
+            width:60%;
+        }
+
+        .list-container {
+            flex: 1;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            line-height:30px;
+            margin-right:8%;
+        }       
+
+
+
+
+
+          .custom-container {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+
+        .r2h h1 {
+            margin-bottom: 20px;
+        }
+        
+        
+        
+          .main-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .heading-section {
+            flex: 1;
+            font-size:18px;
+            margin-left:30px;
+        }
+
+        .paragraph-section {
+            flex: 1;
+          font-size:18px;
+          line-height:25px;
+        }
+</style>
+</head>
+
+
+
+
+
+<div class="navbar">
+  <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+  <a href="#"><i class="fas fa-info-circle"></i> <span>About</span></a>
+  <a href="#"><i class="fas fa-cogs"></i> <span>Services</span></a>
+  <a href="#"><i class="fas fa-envelope"></i> <span>Contact</span></a>
+</div>
+
+<div class="navbar-secondary">
+  
+  <a href="#">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">SERVICES</a>
+  <a href="#">CONTACT US</a>
+</div>
+
+<div class="content">
+  <img src="image_2024_4_21_151.png" alt="Image">
+  <div class="content-text">
+    <h1>Get Started with Stan to <br> Activate Your Account Here</h1>
+    <p>Activate your Stan account here to start watching your favorite shows and movies. Dive into great entertainment easily and enjoy streaming whenever you want</p>
+    <button>Activate Now</button>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="about-us">
+  <center><h1 style="font-size:32px;">About Us</h1></center>
+  <center><h2>stan.com.au/activate:<br></h2></center>
+  </div>
+
+
+
+
+
+
+<div class="container">
+  <div class="left">
+    <p>Activating your Stan account is easy! Once activated, you can watch lots of movies, TV shows, and Stan's own exclusive content. It's quick and designed to be easy for everyone. Start your Stan subscription today and enjoy watching anytime you like!"
+.
+.</p>
+<button class="button-89" role="button">Know More</button>
+  </div>
+ 
+  <div class="vertical-line"></div>
+  <div class="right">
+    
+    <img src="image_2024_4_21_7.png" alt="Icon Image">
+  </div>
+</div>
+
+
+<center><h1>What are the popular shows on Stan 2024?</h1></center>
+<br>
+<br>
+
+<humpty>
+  <div class="card-container">
+    <div class="card">
+      <h4>The Bold Type</h4>
+      <p>A drama series that follows the lives of three young women, Jane, Kat, and Sutton, who work at Scarlet, a global women's magazine.</p>
+    </div>
+       <div class="card">
+      <h4>Yellowstone</h4>
+      <p>A Western drama starring Kevin Costner as John Dutton, the patriarch of the Dutton family, who controls the largest contiguous ranch in the United States. </p>
+    </div>
+       <div class="card">
+      <h4>Better Call Saul</h4>
+      <p>A prequel to the critically acclaimed series "Breaking Bad," "Better Call Saul" follows the transformation of Jimmy McGill, a struggling lawyer, into the morally ambiguous criminal lawyer Saul Goodman. </p>
+    </div>
+       <div class="card">
+      <h4>The Great</h4>
+      <p>A satirical, comedic drama loosely based on the life of Catherine the Great, Empress of Russia. </p>
+    </div>
+       <div class="card">
+      <h4>RuPaul's Drag Race</h4>
+      <p>The Australian version of the popular drag competition show hosted by RuPaul. Drag queens from across Australia compete in a series of challenges that test their charisma..</p>
+    </div>
+       <div class="card">
+      <h4>Billions</h4>
+      <p>A drama series that explores the high-stakes world of finance and power in New York City. The story centers on the rivalry between Bobby Axelrod, a self-made billionaire hedge fund manager.</p>
+    </div>
+    
+    <!-- Repeat the card div 5 more times -->
+    <!-- Add more cards here -->
+  </div>
+ </humpty> 
+  
+  
+  <br>
+  
+  
+  
+      <div class="additional-content">
+    <h2>How do I access the stan.com.au/activate portal to activate my Stan account?</h2>
+    <center><p>To access the stan.com.au/activate portal to activate your Stan account, you generally need to follow these steps:</p></center>
+</div>
+
+
+<!-- Add this section after the existing content-container -->
+<div class="additional-contents">
+    <ul>
+        <li><strong>Visit the Stan Activation Portal</strong>:Open your web browser and go to stan.com.au/activate.</li>
+        <li><strong>Enter Activation Code</strong>: You'll be prompted to enter the activation code that was provided to you when you signed up for Stan. This code is usually sent to your email or displayed on your TV screen if you signed up through a supported device.
+</li>
+<!--         <li><strong>Download the Software</strong>:<br> -->
+
+<!-- Locate the 'Downloads' section for your product.<br>
+Select the appropriate software or driver compatible with your operating system.<br> -->
+<!-- Click on the 'Download' button to start the download process.</li> -->
+        <li><strong>Login or Sign Up</strong>:<br>
+     If you already have a Stan account, log in using your email address and password. If you don't have an account yet, you'll need to sign up for one.</li>
+       
+        <li><strong>Follow On-Screen Instructions</strong>:<br>
+
+Once you've entered the activation code and logged in or signed up, follow any additional on-screen instructions to complete the activation process.</li>
+        
+        
+    </ul>
+    
+</div>
+   <br>
+   <br>
+<hr>
+
+    <!-- Add this section after the existing content-container -->
+<div class="second-additional-content">
+    <h2>Is there a specific code or PIN required when using stan.com.au/activate to activate my Stan subscription?</h2>
+    <p>Yes, when you're using the stan.com.au/activate portal to activate your Stan subscription, you will need a specific activation code or PIN. This code is typically provided to you either via email when you sign up for Stan or displayed on your TV screen if you sign up through a supported device.
+
+Here's how you can find and use the activation code or PIN:</p>
+    
+</div>
+    
+    
+        
+<div class="sholey-container">
+    <div class="image-container">
+        <img src="image_2024_4_21_385.png" alt="Description of the image">
+    </div>
+    <div class="list-container">
+        <ul class="list">
+            <li>
+<strong>Check Your Email</strong>:If you signed up for Stan online, check the email you provided during the registration process. Stan usually sends the activation code to this email address.<br>
+<STRONG>Check Your TV Screen</STRONG>: If you signed up for Stan through a supported device, the activation code or PIN might be displayed on your TV screen during the sign-up process.</li><br>
+            <li>
+            <strong>Enter the Code</strong>: Once you have the activation code or PIN, go to the stan.com.au/activate portal and enter the code in the specified field.<br>
+            <STRONG>Complete Activation</STRONG>:After entering the activation code, follow the on-screen instructions to complete the activation process and start using your Stan subscription.</li>
+<!--<strong>Lost or Stolen Card Protection</strong>: Many gift card providers offer protection against unauthorized transactions if your card is lost or stolen.<br>-->
+<!-- <strong>Wi-Fi Setup</strong>: Choose "Wi-Fi Setup Wizard" to begin the setup process.<br>
+<!--<strong>Select Network</strong>: From the available networks, select your Wi-Fi network.<br>-->
+<!--<strong>Enter Password</strong>: Input the Wi-Fi password when prompted to establish the connection. -->
+<!--            </li>-->
+<!--            <li>-->
+<!--            <strong>Reload Fee</strong>:If you want to reload additional funds onto your Vanilla Gift Card, there might be a fee associated with this service.<br>-->
+<!-- <strong>Gift Giving</strong>: It's a practical way to give gifts, allowing recipients the flexibility to choose their own purchases. -->
+<!--            </li><br>-->
+<!--            <li>-->
+<!--            <strong>Foreign Transaction Fee:</strong>: If you use your Vanilla Gift Card for purchases made in a foreign currency or outside of the country where the card was issued, you may incur a foreign transaction fee.<br>-->
+<!-- <strong>Global Acceptance</strong>: Many Vanilla Gift Cards are accepted worldwide, offering flexibility for international transactions.<br> -->
+<!-- <strong>Complete Setup</strong>: Adhere to the on-screen prompts and instructions to finalize the setup process. -->
+<!--            </li><br>-->
+<!--            <li>-->
+<!--            <strong>Replacement Fee</strong>: f your Vanilla Gift Card is lost or stolen and you need a replacement card, there could be a fee to issue a new card.<br>-->
+<!--                <li><strong>Usage Restrictions</strong>:Some Vanilla Gift Cards may have restrictions on where they can be used. For example, they might not be accepted for online purchases or at certain merchants.-->
+<!--            </li>-->
+        </ul>
+    </div>
+</div>
+  <br>  
+    <br>
+    <br>
+    
+<div class="main-container">
+    <div class="heading-section">
+        <h1>Once activated on stan.com.au/activate, <br> how do I start streaming content on Stan?</h1>
+    </div>
+    <div class="paragraph-section">
+        <p>Once you've activated your device on Stan's website, you'll need to download the Stan app on the device you activated. After installing the app, log in using the credentials you used during activation. From there, you can start browsing Stan's extensive library of TV shows, movies, and other content. Find something you want to watch, select it, and then click or tap on the "Play" or "Watch Now" button to start streaming immediately. 
+
+<br><br>
+You can adjust playback settings like subtitles, audio language, and video quality as needed. Stan also offers additional features such as creating watchlists and personalized recommendations to enhance your viewing experience. If you run into any issues, Stan's support resources and customer support are available to assist you.</p>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+    
+<!--     <div class="content">-->
+<!--            <center><h2 style="font-size:34px;">Tips for Managing Your Vanilla Gift Balance</h2></center><br><br>-->
+<!--            <center><p>To keep your Vanilla Gift Card in check, make sure to know how much money is left on it by checking online, by phone, or using their app. Watch out for any fees they might charge, like monthly ones or if you use an ATM. Try to avoid these fees by using the card wisely. If you have small amounts on different cards, think about putting them all onto one card to make things easier. Also, remember to use up all the money before the card expires. -->
+<!--<br><br>-->
+<!--Keep your card safe, like you would with cash. If you lose it or someone steals it, contact customer service right away to get help. And keep an eye out for any strange transactions on your card and report them fast. By being careful and staying on top of things, you can make the most out of your Vanilla Gift Card.</p></center>-->
+<!--        </div>-->
+<!--    <br>-->
+<!--   <br>-->
+<div class="second-additional-content">
+    <h2>SWhat are the common troubleshooting steps recommended if I face problems during the activation on stan.com.au/activate?</h2>
+    <center><p style="font-size:18px;">
+Encountering problems during activation on Stan.com.au/activate can be frustrating, but there are several common troubleshooting steps you can take to resolve the issue:</p></center>
+    
+</div>
+    
+    <br><br>
+        
+<div class="sholey-container">
+    <div class="image-container">
+        <img src="https://techeranews.com/wp-content/uploads/2023/12/techeranews-1.png" alt="Description of the image">
+    </div>
+    <div class="list-container">
+        <ul class="list">
+            <li><strong>Check Internet Connection:</strong><br>
+ Ensure you have a stable and active internet connection. A poor or intermittent connection can cause activation problems.<br>
+ </li>
+            <li><strong>Correct URL:</strong><br>
+            Make sure you are entering the correct activation URL (Stan.com.au/activate) into your web browser's address bar.<br>
+<br>
+<!-- <strong>Wi-Fi Setup</strong>: Choose "Wi-Fi Setup Wizard" to begin the setup process.<br>
+<strong>Select Network</strong>: From the available networks, select your Wi-Fi network.<br>
+<strong>Enter Password</strong>: Input the Wi-Fi password when prompted to establish the connection. -->
+            </li>
+            <li><strong>Supported Devices</strong>:<br>
+         Confirm that the device you are using is supported by Stan. Some older or incompatible devices may have issues with activation.
+<br>
+
+            </li>
+            <li><strong>Clear Cache and Cookies</strong>:<br>
+         Clear your browser's cache and cookies, as outdated or corrupted data may interfere with the activation process.<br>
+<!-- <strong>Complete Setup</strong>: Adhere to the on-screen prompts and instructions to finalize the setup process. -->
+            </li>
+            <li><strong>Update Device Software</strong>:<br>
+          Ensure that your device's operating system and software are up to date. Outdated software can sometimes cause activation issues.
+
+.<br>
+
+            </li>
+        </ul>
+    </div>
+</div>    
+
+</humpty>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
